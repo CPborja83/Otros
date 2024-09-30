@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Censo Población</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado con imagen de fondo -->
+        <div class="text-center titulo-container">
+            <h1 class="titulo">Datos del Censo</h1>
+        </div>
+
+        <!-- Lista desplegable -->
+        <div class="my-4">
+            <label for="indicadores" class="form-label">Selecciona un indicador:</label>
+            <select id="indicadores" class="form-select">
+                <!-- Las opciones serán agregadas dinámicamente desde la API -->
+            </select>
+        </div>
+
+        <!-- Mapa e información -->
+        <div class="my-4">
+            <h3>Información del indicador seleccionado:</h3>
+            <div id="informacion"></div>
+            <iframe src="https://censo2018.ine.gob.gt/mapas" width="100%" height="500px" title="Mapa del Censo"></iframe>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
